@@ -9,12 +9,12 @@ import (
 	"strings"
 
 	"github.com/docker/distribution/reference"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
-	"github.com/moby/buildkit/util/gitutil"
-	"github.com/moby/buildkit/util/sshutil"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/apicaps"
+	"github.com/preminger/buildkit/util/gitutil"
+	"github.com/preminger/buildkit/util/sshutil"
 )
 
 type SourceOp struct {

@@ -3,8 +3,8 @@ package result
 import (
 	"reflect"
 
-	pb "github.com/moby/buildkit/frontend/gateway/pb"
 	digest "github.com/opencontainers/go-digest"
+	pb "github.com/preminger/buildkit/frontend/gateway/pb"
 )
 
 const (

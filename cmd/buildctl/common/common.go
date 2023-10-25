@@ -11,9 +11,9 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/tracing/detect"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/util/tracing/detect"
 	"github.com/urfave/cli"
 	"go.opentelemetry.io/otel/trace"
 )

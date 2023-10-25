@@ -10,11 +10,11 @@ import (
 
 	cni "github.com/containerd/go-cni"
 	"github.com/gofrs/flock"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/network"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/network"
 	"go.opentelemetry.io/otel/trace"
 )
 

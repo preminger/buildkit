@@ -8,10 +8,10 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/moby/buildkit/frontend/gateway/client"
-	gwpb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/solver/errdefs"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/frontend/gateway/client"
+	gwpb "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/solver/errdefs"
 )
 
 const RequestSubrequestsDescribe = "frontend.subrequests.describe"

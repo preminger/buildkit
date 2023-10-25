@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/moby/buildkit/session"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc/metadata"
 )

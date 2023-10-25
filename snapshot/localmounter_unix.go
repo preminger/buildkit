@@ -9,8 +9,8 @@ import (
 
 	"github.com/containerd/containerd/mount"
 	"github.com/containerd/containerd/pkg/userns"
-	rootlessmountopts "github.com/moby/buildkit/util/rootless/mountopts"
 	"github.com/pkg/errors"
+	rootlessmountopts "github.com/preminger/buildkit/util/rootless/mountopts"
 )
 
 func (lm *localMounter) Mount() (string, error) {

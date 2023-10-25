@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/docker/docker/client"
-	"github.com/moby/buildkit/cmd/buildkitd/config"
-	"github.com/moby/buildkit/util/testutil/dockerd"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cmd/buildkitd/config"
+	"github.com/preminger/buildkit/util/testutil/dockerd"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -5,11 +5,11 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	"github.com/moby/buildkit/frontend/subrequests/targets"
-	"github.com/moby/buildkit/solver/errdefs"
+	"github.com/preminger/buildkit/frontend/gateway/client"
+	"github.com/preminger/buildkit/frontend/subrequests"
+	"github.com/preminger/buildkit/frontend/subrequests/outline"
+	"github.com/preminger/buildkit/frontend/subrequests/targets"
+	"github.com/preminger/buildkit/solver/errdefs"
 )
 
 func checkSubRequest(ctx context.Context, opts map[string]string) (*client.Result, bool, error) {

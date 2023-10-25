@@ -6,12 +6,12 @@ package containerimage
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 // patchImageLayers appends an extra nydus bootstrap layer

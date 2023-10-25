@@ -3,8 +3,8 @@ package instructions
 import (
 	"strings"
 
-	"github.com/moby/buildkit/util/suggest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/suggest"
 )
 
 // FlagType is the type of the build flag

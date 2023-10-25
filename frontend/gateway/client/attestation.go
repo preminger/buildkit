@@ -1,9 +1,9 @@
 package client
 
 import (
-	pb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/solver/result"
 	"github.com/pkg/errors"
+	pb "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/solver/result"
 )
 
 func AttestationToPB[T any](a *result.Attestation[T]) (*pb.Attestation, error) {

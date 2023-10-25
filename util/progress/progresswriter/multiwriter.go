@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/moby/buildkit/client"
+	"github.com/preminger/buildkit/client"
 	"golang.org/x/sync/errgroup"
 )
 

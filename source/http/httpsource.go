@@ -16,16 +16,16 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/source"
-	srctypes "github.com/moby/buildkit/source/types"
-	"github.com/moby/buildkit/util/tracing"
 	"github.com/moby/locker"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/source"
+	srctypes "github.com/preminger/buildkit/source/types"
+	"github.com/preminger/buildkit/util/tracing"
 )
 
 type Opt struct {
@@ -145,7 +145,7 @@ func (hs *httpSourceHandler) CacheKey(ctx context.Context, g session.Group, inde
 
 	// If we request a single ETag in 'If-None-Match', some servers omit the
 	// unambiguous ETag in their response.
-	// See: https://github.com/moby/buildkit/issues/905
+	// See: https://github.com/preminger/buildkit/issues/905
 	var onlyETag string
 
 	if len(mds) > 0 {

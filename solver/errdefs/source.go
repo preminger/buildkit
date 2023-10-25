@@ -5,9 +5,9 @@ import (
 	"io"
 	"strings"
 
-	pb "github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
+	pb "github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/grpcerrors"
 )
 
 func WithSource(err error, src Source) error {

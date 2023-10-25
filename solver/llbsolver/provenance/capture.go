@@ -4,10 +4,10 @@ import (
 	"sort"
 
 	distreference "github.com/docker/distribution/reference"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/util/urlutil"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/solver/result"
+	"github.com/preminger/buildkit/util/urlutil"
 )
 
 type Result = result.Result[*Capture]

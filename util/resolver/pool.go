@@ -13,10 +13,10 @@ import (
 	"github.com/containerd/containerd/remotes"
 	"github.com/containerd/containerd/remotes/docker"
 	distreference "github.com/docker/distribution/reference"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/source"
-	"github.com/moby/buildkit/version"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/source"
+	"github.com/preminger/buildkit/version"
 )
 
 // DefaultPool is the default shared resolver pool instance

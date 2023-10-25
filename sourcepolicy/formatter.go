@@ -3,9 +3,9 @@ package sourcepolicy
 import (
 	"regexp"
 
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/wildcard"
 	"github.com/pkg/errors"
+	spb "github.com/preminger/buildkit/sourcepolicy/pb"
+	"github.com/preminger/buildkit/util/wildcard"
 )
 
 // Source wraps a a protobuf source in order to store cached state such as the compiled regexes.

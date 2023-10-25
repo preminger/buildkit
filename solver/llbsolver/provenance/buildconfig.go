@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 type BuildConfig struct {

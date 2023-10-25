@@ -196,7 +196,7 @@ disabled_plugins = ["cri"]
 		"--containerd-worker-gc=false",
 		"--containerd-worker=true",
 		"--containerd-worker-addr", address,
-		"--containerd-worker-labels=org.mobyproject.buildkit.worker.sandbox=true", // Include use of --containerd-worker-labels to trigger https://github.com/moby/buildkit/pull/603
+		"--containerd-worker-labels=org.mobyproject.buildkit.worker.sandbox=true", // Include use of --containerd-worker-labels to trigger https://github.com/preminger/buildkit/pull/603
 	}, snBuildkitdArgs...)
 
 	if runtime.GOOS != "windows" && c.snapshotter != "native" {

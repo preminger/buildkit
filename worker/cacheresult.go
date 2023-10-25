@@ -5,11 +5,11 @@ import (
 	"strings"
 	"time"
 
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
 	"github.com/pkg/errors"
+	cacheconfig "github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 func NewCacheResultStorage(wc *Controller) solver.CacheResultStorage {

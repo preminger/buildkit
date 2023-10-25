@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/containerd/console"
-	"github.com/moby/buildkit/client"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client"
 )
 
 // parseOutputCSV parses a single --output CSV string

@@ -6,16 +6,16 @@ import (
 
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/leases"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/exporter"
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/exporter"
+	"github.com/preminger/buildkit/frontend"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
 )
 
 type Worker interface {

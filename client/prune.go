@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
 )
 
 func (c *Client) Prune(ctx context.Context, ch chan UsageInfo, opts ...PruneOption) error {

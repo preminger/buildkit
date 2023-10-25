@@ -5,8 +5,8 @@ import (
 	io "io"
 	"net/url"
 
-	"github.com/moby/buildkit/session"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
 	"google.golang.org/grpc/metadata"
 )
 

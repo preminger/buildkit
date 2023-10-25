@@ -7,10 +7,10 @@ import (
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/errdefs"
 	"github.com/containerd/containerd/services/content/contentserver"
-	"github.com/moby/buildkit/session"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

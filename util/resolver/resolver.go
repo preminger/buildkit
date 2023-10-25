@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/remotes/docker"
-	"github.com/moby/buildkit/util/resolver/config"
-	"github.com/moby/buildkit/util/tracing"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/resolver/config"
+	"github.com/preminger/buildkit/util/tracing"
 )
 
 func fillInsecureOpts(host string, c config.RegistryConfig, h docker.RegistryHost) ([]docker.RegistryHost, error) {

@@ -5,13 +5,13 @@ import (
 	"io"
 	"syscall"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/solver/result"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/apicaps"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/solver/result"
+	spb "github.com/preminger/buildkit/sourcepolicy/pb"
+	"github.com/preminger/buildkit/util/apicaps"
 	fstypes "github.com/tonistiigi/fsutil/types"
 )
 

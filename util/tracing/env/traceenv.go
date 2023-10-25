@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/moby/buildkit/util/appcontext"
+	"github.com/preminger/buildkit/util/appcontext"
 	"go.opentelemetry.io/otel/propagation"
 )
 

@@ -20,7 +20,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	log "github.com/moby/buildkit/util/bklog"
+	log "github.com/preminger/buildkit/util/bklog"
 )
 
 const (

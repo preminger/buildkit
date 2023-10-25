@@ -7,9 +7,9 @@ import (
 	"io"
 	"text/tabwriter"
 
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/preminger/buildkit/frontend/gateway/client"
+	"github.com/preminger/buildkit/frontend/subrequests"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 const RequestSubrequestsOutline = "frontend.outline"

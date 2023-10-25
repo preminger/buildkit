@@ -7,13 +7,13 @@ import (
 	"testing"
 
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/frontend/dockerfile/builder"
-	gateway "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	"github.com/moby/buildkit/util/testutil/integration"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/frontend/dockerfile/builder"
+	gateway "github.com/preminger/buildkit/frontend/gateway/client"
+	"github.com/preminger/buildkit/frontend/subrequests"
+	"github.com/preminger/buildkit/frontend/subrequests/outline"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

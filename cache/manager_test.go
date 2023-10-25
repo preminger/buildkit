@@ -34,21 +34,21 @@ import (
 	"github.com/containerd/continuity/fs/fstest"
 	"github.com/containerd/stargz-snapshotter/estargz"
 	"github.com/klauspost/compress/zstd"
-	"github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	containerdsnapshot "github.com/moby/buildkit/snapshot/containerd"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/iohelper"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/winlayers"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/cache/metadata"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/snapshot"
+	containerdsnapshot "github.com/preminger/buildkit/snapshot/containerd"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/compression"
+	"github.com/preminger/buildkit/util/contentutil"
+	"github.com/preminger/buildkit/util/iohelper"
+	"github.com/preminger/buildkit/util/leaseutil"
+	"github.com/preminger/buildkit/util/winlayers"
 	"github.com/stretchr/testify/require"
 	bolt "go.etcd.io/bbolt"
 	"golang.org/x/sync/errgroup"
@@ -339,7 +339,7 @@ func TestLazyGetByBlob(t *testing.T) {
 	t.Cleanup(cleanup)
 	cm := co.manager
 
-	// Test for #2226 https://github.com/moby/buildkit/issues/2226, create lazy blobs with the same diff ID but
+	// Test for #2226 https://github.com/preminger/buildkit/issues/2226, create lazy blobs with the same diff ID but
 	// different digests (due to different compression) and make sure GetByBlob still works
 	_, desc, err := mapToBlob(map[string]string{"foo": "bar"}, true)
 	require.NoError(t, err)

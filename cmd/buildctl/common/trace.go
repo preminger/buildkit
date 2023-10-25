@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/moby/buildkit/util/appcontext"
-	"github.com/moby/buildkit/util/tracing/detect"
+	"github.com/preminger/buildkit/util/appcontext"
+	"github.com/preminger/buildkit/util/tracing/detect"
 	"github.com/urfave/cli"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"

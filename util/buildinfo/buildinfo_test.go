@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	binfotypes "github.com/moby/buildkit/util/buildinfo/types"
+	"github.com/preminger/buildkit/exporter/containerimage/exptypes"
+	binfotypes "github.com/preminger/buildkit/util/buildinfo/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

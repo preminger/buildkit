@@ -9,12 +9,12 @@ import (
 
 	"github.com/containerd/continuity/fs"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	"github.com/moby/buildkit/exporter"
-	gatewaypb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/result"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/exporter"
+	gatewaypb "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/solver/result"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/remotes"
-	"github.com/moby/buildkit/exporter/containerimage/image"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/exporter/containerimage/image"
 )
 
 func readSchema1Config(ctx context.Context, ref string, desc ocispecs.Descriptor, fetcher remotes.Fetcher, cache ContentCache) (digest.Digest, []byte, error) {

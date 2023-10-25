@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/sshforward"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/session/sshforward"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"
 	"golang.org/x/sync/errgroup"

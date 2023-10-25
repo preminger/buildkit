@@ -3,10 +3,10 @@ package cacheimport
 import (
 	"encoding/json"
 
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/contentutil"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/contentutil"
 )
 
 func Parse(configJSON []byte, provider DescriptorProvider, t solver.CacheExporterTarget) error {

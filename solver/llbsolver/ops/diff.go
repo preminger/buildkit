@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/moby/buildkit/worker"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/worker"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver/ops/opsutils"
-	"github.com/moby/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver/ops/opsutils"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 const diffCacheType = "buildkit.diff.v0"

@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/armon/circbuf"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/progress"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/progress"
 	"github.com/tonistiigi/units"
 )
 

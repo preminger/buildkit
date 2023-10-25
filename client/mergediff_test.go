@@ -10,11 +10,11 @@ import (
 	"github.com/containerd/containerd/images"
 	"github.com/containerd/containerd/namespaces"
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/testutil/integration"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 
@@ -1195,7 +1195,7 @@ func (tc verifyContents) Run(t *testing.T, sb integration.Sandbox) {
 	switch tc.name {
 	case "TestDiffUpperScratch":
 		if integration.IsTestDockerdMoby(sb) {
-			t.Skip("failed to handle changes: lstat ... no such file or directory: https://github.com/moby/buildkit/pull/2726#issuecomment-1070978499")
+			t.Skip("failed to handle changes: lstat ... no such file or directory: https://github.com/preminger/buildkit/pull/2726#issuecomment-1070978499")
 		}
 	}
 

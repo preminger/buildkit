@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/identity"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/identity"
 )
 
 type LogT interface {

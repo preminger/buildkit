@@ -10,9 +10,9 @@ import (
 	"unsafe"
 
 	"github.com/containerd/containerd/oci"
-	"github.com/moby/buildkit/util/bklog"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/bklog"
 	"golang.org/x/sys/unix"
 )
 

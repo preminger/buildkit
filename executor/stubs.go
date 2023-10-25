@@ -7,7 +7,7 @@ import (
 	"syscall"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/moby/buildkit/util/system"
+	"github.com/preminger/buildkit/util/system"
 	"github.com/sirupsen/logrus"
 )
 
@@ -68,7 +68,7 @@ func MountStubsCleaner(dir string, mounts []Mount, recursive bool) func() {
 			}
 
 			// Back up the timestamps of the dir for reproducible builds
-			// https://github.com/moby/buildkit/issues/3148
+			// https://github.com/preminger/buildkit/issues/3148
 			dir := filepath.Dir(p)
 			dirSt, err := os.Stat(dir)
 			if err != nil {

@@ -15,14 +15,14 @@ import (
 	"github.com/containerd/continuity/fs"
 	"github.com/docker/docker/pkg/idtools"
 	"github.com/mitchellh/hashstructure/v2"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/network"
-	rootlessmountopts "github.com/moby/buildkit/util/rootless/mountopts"
-	traceexec "github.com/moby/buildkit/util/tracing/exec"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/opencontainers/selinux/go-selinux"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/util/network"
+	rootlessmountopts "github.com/preminger/buildkit/util/rootless/mountopts"
+	traceexec "github.com/preminger/buildkit/util/tracing/exec"
 )
 
 // ProcessMode configures PID namespaces

@@ -8,12 +8,12 @@ import (
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/reference"
 	"github.com/containerd/containerd/remotes"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/session"
-	sessioncontent "github.com/moby/buildkit/session/content"
-	"github.com/moby/buildkit/util/imageutil"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/session"
+	sessioncontent "github.com/preminger/buildkit/session/content"
+	"github.com/preminger/buildkit/util/imageutil"
 )
 
 const (

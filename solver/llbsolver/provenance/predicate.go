@@ -6,10 +6,10 @@ import (
 	"github.com/containerd/containerd/platforms"
 	slsa "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/common"
 	slsa02 "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/v0.2"
-	"github.com/moby/buildkit/util/purl"
-	"github.com/moby/buildkit/util/urlutil"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/package-url/packageurl-go"
+	"github.com/preminger/buildkit/util/purl"
+	"github.com/preminger/buildkit/util/urlutil"
 )
 
 const (

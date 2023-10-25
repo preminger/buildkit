@@ -14,10 +14,10 @@ import (
 
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/strslice"
-	"github.com/moby/buildkit/frontend/dockerfile/command"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/util/suggest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/frontend/dockerfile/command"
+	"github.com/preminger/buildkit/frontend/dockerfile/parser"
+	"github.com/preminger/buildkit/util/suggest"
 )
 
 type parseRequest struct {

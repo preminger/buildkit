@@ -3,10 +3,10 @@ package llbbuild
 import (
 	"context"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/apicaps"
 )
 
 func Build(opt ...BuildOption) llb.StateOption {

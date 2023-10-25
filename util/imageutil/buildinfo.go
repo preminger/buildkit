@@ -4,13 +4,13 @@ import (
 	"encoding/base64"
 	"encoding/json"
 
-	binfotypes "github.com/moby/buildkit/util/buildinfo/types"
 	"github.com/pkg/errors"
+	binfotypes "github.com/preminger/buildkit/util/buildinfo/types"
 )
 
 // BuildInfo returns build info from image config.
 //
-// Deprecated: Build information is deprecated: https://github.com/moby/buildkit/blob/master/docs/deprecated.md
+// Deprecated: Build information is deprecated: https://github.com/preminger/buildkit/blob/master/docs/deprecated.md
 func BuildInfo(dt []byte) (*binfotypes.BuildInfo, error) {
 	if len(dt) == 0 {
 		return nil, nil

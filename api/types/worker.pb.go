@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	pb "github.com/moby/buildkit/solver/pb"
+	pb "github.com/preminger/buildkit/solver/pb"
 	io "io"
 	math "math"
 	math_bits "math/bits"

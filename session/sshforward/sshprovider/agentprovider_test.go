@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/moby/buildkit/cmd/buildctl/build"
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
+	"github.com/preminger/buildkit/cmd/buildctl/build"
+	"github.com/preminger/buildkit/session/sshforward/sshprovider"
 )
 
 func TestToAgentSource(t *testing.T) {

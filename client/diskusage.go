@@ -5,8 +5,8 @@ import (
 	"sort"
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
 )
 
 type UsageInfo struct {

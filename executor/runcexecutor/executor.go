@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/bklog"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 
@@ -20,16 +20,16 @@ import (
 	"github.com/containerd/continuity/fs"
 	runc "github.com/containerd/go-runc"
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/executor/oci"
-	gatewayapi "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/network"
-	rootlessspecconv "github.com/moby/buildkit/util/rootless/specconv"
-	"github.com/moby/buildkit/util/stack"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/executor/oci"
+	gatewayapi "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/network"
+	rootlessspecconv "github.com/preminger/buildkit/util/rootless/specconv"
+	"github.com/preminger/buildkit/util/stack"
 )
 
 type Opt struct {

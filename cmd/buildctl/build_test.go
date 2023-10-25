@@ -15,10 +15,10 @@ import (
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/namespaces"
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/util/testutil/integration"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/exporter/containerimage/exptypes"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

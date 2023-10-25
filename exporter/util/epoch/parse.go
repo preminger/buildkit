@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/moby/buildkit/exporter"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/exporter"
+	"github.com/preminger/buildkit/exporter/containerimage/exptypes"
 )
 
 const (

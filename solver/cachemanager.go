@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/bklog"
 )
 
 // NewInMemoryCacheManager creates a new in-memory cache manager

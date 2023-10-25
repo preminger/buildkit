@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/bklog"
 
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/fsutil"

@@ -8,10 +8,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/moby/buildkit/util/network/netproviders"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/worker/base"
-	"github.com/moby/buildkit/worker/tests"
+	"github.com/preminger/buildkit/util/network/netproviders"
+	"github.com/preminger/buildkit/util/testutil/integration"
+	"github.com/preminger/buildkit/worker/base"
+	"github.com/preminger/buildkit/worker/tests"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,12 +6,12 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/platforms"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/system"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/system"
 	"github.com/stretchr/testify/require"
 )
 
@@ -62,7 +62,7 @@ func TestDefaultPlatform(t *testing.T) {
 	require.Equal(t, depth(e), 2)
 
 	// needs extra normalize for default spec
-	// https://github.com/moby/buildkit/pull/2427#issuecomment-952301867
+	// https://github.com/preminger/buildkit/pull/2427#issuecomment-952301867
 	expected := platforms.Normalize(platforms.DefaultSpec())
 
 	require.Equal(t, expected, platform(e))

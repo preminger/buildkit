@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/moby/buildkit/util/appdefaults"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/appdefaults"
 	"github.com/urfave/cli"
 	bolt "go.etcd.io/bbolt"
 )

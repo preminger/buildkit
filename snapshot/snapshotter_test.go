@@ -21,9 +21,9 @@ import (
 	"github.com/containerd/containerd/snapshots/native"
 	"github.com/containerd/containerd/snapshots/overlay"
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/leaseutil"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/leaseutil"
 	"github.com/stretchr/testify/require"
 	bolt "go.etcd.io/bbolt"
 )

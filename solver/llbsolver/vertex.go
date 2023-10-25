@@ -6,14 +6,14 @@ import (
 	"strings"
 
 	"github.com/containerd/containerd/platforms"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver/ops/opsutils"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/source"
-	"github.com/moby/buildkit/util/entitlements"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver/ops/opsutils"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/source"
+	"github.com/preminger/buildkit/util/entitlements"
 )
 
 type vertex struct {

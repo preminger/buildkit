@@ -14,12 +14,12 @@ import (
 	"github.com/containerd/containerd/remotes/docker"
 	"github.com/containerd/containerd/remotes/docker/auth"
 	remoteserrors "github.com/containerd/containerd/remotes/errors"
-	"github.com/moby/buildkit/session"
-	sessionauth "github.com/moby/buildkit/session/auth"
-	log "github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/flightcontrol"
-	"github.com/moby/buildkit/version"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	sessionauth "github.com/preminger/buildkit/session/auth"
+	log "github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/flightcontrol"
+	"github.com/preminger/buildkit/version"
 	"github.com/sirupsen/logrus"
 )
 

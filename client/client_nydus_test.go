@@ -11,12 +11,12 @@ import (
 	"github.com/containerd/containerd/images"
 	"github.com/containerd/containerd/namespaces"
 	nydusify "github.com/containerd/nydus-snapshotter/pkg/converter"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/testutil/integration"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/compression"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

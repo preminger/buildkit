@@ -6,12 +6,12 @@ import (
 	"strings"
 
 	"github.com/containerd/containerd/reference"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/solver/pb"
-	srctypes "github.com/moby/buildkit/source/types"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/solver/pb"
+	srctypes "github.com/preminger/buildkit/source/types"
 	"github.com/tonistiigi/fsutil"
 )
 

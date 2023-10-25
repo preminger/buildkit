@@ -1,7 +1,7 @@
 package client
 
 import (
-	controlapi "github.com/moby/buildkit/api/services/control"
+	controlapi "github.com/preminger/buildkit/api/services/control"
 )
 
 var emptyLogVertexSize int

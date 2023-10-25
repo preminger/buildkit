@@ -18,25 +18,25 @@ import (
 	"github.com/containerd/containerd/platforms"
 	"github.com/docker/distribution/reference"
 	"github.com/docker/go-connections/nat"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/client/llb/imagemetaresolver"
-	"github.com/moby/buildkit/exporter/containerimage/image"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	"github.com/moby/buildkit/frontend/subrequests/targets"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
-	binfotypes "github.com/moby/buildkit/util/buildinfo/types"
-	"github.com/moby/buildkit/util/gitutil"
-	"github.com/moby/buildkit/util/suggest"
-	"github.com/moby/buildkit/util/system"
 	"github.com/moby/sys/signal"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/client/llb/imagemetaresolver"
+	"github.com/preminger/buildkit/exporter/containerimage/image"
+	"github.com/preminger/buildkit/frontend/dockerfile/instructions"
+	"github.com/preminger/buildkit/frontend/dockerfile/parser"
+	"github.com/preminger/buildkit/frontend/dockerfile/shell"
+	"github.com/preminger/buildkit/frontend/subrequests/outline"
+	"github.com/preminger/buildkit/frontend/subrequests/targets"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/apicaps"
+	binfotypes "github.com/preminger/buildkit/util/buildinfo/types"
+	"github.com/preminger/buildkit/util/gitutil"
+	"github.com/preminger/buildkit/util/suggest"
+	"github.com/preminger/buildkit/util/system"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -1159,7 +1159,7 @@ func dispatchCopy(d *dispatchState, cfg copyConfig) error {
 			// https://docs.docker.com/engine/reference/builder/#add
 			//
 			// Note: mixing up remote archives and local archives in a single ADD instruction
-			// would result in undefined behavior: https://github.com/moby/buildkit/pull/387#discussion_r189494717
+			// would result in undefined behavior: https://github.com/preminger/buildkit/pull/387#discussion_r189494717
 			u, err := url.Parse(src)
 			f := "__unnamed__"
 			if err == nil {

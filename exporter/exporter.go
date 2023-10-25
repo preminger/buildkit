@@ -3,10 +3,10 @@ package exporter
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/util/compression"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/solver/result"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 type Source = result.Result[cache.ImmutableRef]

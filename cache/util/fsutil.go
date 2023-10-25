@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/moby/buildkit/snapshot"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/snapshot"
 	"github.com/tonistiigi/fsutil"
 	fstypes "github.com/tonistiigi/fsutil/types"
 )

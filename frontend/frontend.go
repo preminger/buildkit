@@ -3,13 +3,13 @@ package frontend
 import (
 	"context"
 
-	"github.com/moby/buildkit/client/llb"
-	gw "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/solver/result"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/client/llb"
+	gw "github.com/preminger/buildkit/frontend/gateway/client"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/solver/result"
 )
 
 type Result = result.Result[solver.ResultProxy]

@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/moby/buildkit/cache/remotecache"
-	v1 "github.com/moby/buildkit/cache/remotecache/v1"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/remotecache"
+	v1 "github.com/preminger/buildkit/cache/remotecache/v1"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/compression"
 	"github.com/sirupsen/logrus"
 )
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/preminger/buildkit/solver/pb"
 	"github.com/stretchr/testify/require"
 )
 

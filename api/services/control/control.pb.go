@@ -11,10 +11,10 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
 	_ "github.com/golang/protobuf/ptypes/timestamp"
-	types "github.com/moby/buildkit/api/types"
-	pb "github.com/moby/buildkit/solver/pb"
-	pb1 "github.com/moby/buildkit/sourcepolicy/pb"
-	github_com_moby_buildkit_util_entitlements "github.com/moby/buildkit/util/entitlements"
+	types "github.com/preminger/buildkit/api/types"
+	pb "github.com/preminger/buildkit/solver/pb"
+	pb1 "github.com/preminger/buildkit/sourcepolicy/pb"
+	github_com_moby_buildkit_util_entitlements "github.com/preminger/buildkit/util/entitlements"
 	github_com_opencontainers_go_digest "github.com/opencontainers/go-digest"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -375,7 +375,7 @@ type SolveRequest struct {
 	Frontend             string                                                   `protobuf:"bytes,6,opt,name=Frontend,proto3" json:"Frontend,omitempty"`
 	FrontendAttrs        map[string]string                                        `protobuf:"bytes,7,rep,name=FrontendAttrs,proto3" json:"FrontendAttrs,omitempty" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 	Cache                CacheOptions                                             `protobuf:"bytes,8,opt,name=Cache,proto3" json:"Cache"`
-	Entitlements         []github_com_moby_buildkit_util_entitlements.Entitlement `protobuf:"bytes,9,rep,name=Entitlements,proto3,customtype=github.com/moby/buildkit/util/entitlements.Entitlement" json:"Entitlements,omitempty"`
+	Entitlements         []github_com_moby_buildkit_util_entitlements.Entitlement `protobuf:"bytes,9,rep,name=Entitlements,proto3,customtype=github.com/preminger/buildkit/util/entitlements.Entitlement" json:"Entitlements,omitempty"`
 	FrontendInputs       map[string]*pb.Definition                                `protobuf:"bytes,10,rep,name=FrontendInputs,proto3" json:"FrontendInputs,omitempty" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 	Internal             bool                                                     `protobuf:"varint,11,opt,name=Internal,proto3" json:"Internal,omitempty"`
 	SourcePolicy         *pb1.Policy                                              `protobuf:"bytes,12,opt,name=SourcePolicy,proto3" json:"SourcePolicy,omitempty"`

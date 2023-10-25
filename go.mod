@@ -1,4 +1,4 @@
-module github.com/moby/buildkit
+module github.com/preminger/buildkit
 
 go 1.18
 

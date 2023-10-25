@@ -11,12 +11,12 @@ import (
 
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/errdefs"
-	"github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/compression"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/util/compression"
 
 	nydusify "github.com/containerd/nydus-snapshotter/pkg/converter"
 )

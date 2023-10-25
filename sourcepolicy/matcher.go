@@ -4,8 +4,8 @@ import (
 	"context"
 	"regexp"
 
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
 	"github.com/pkg/errors"
+	spb "github.com/preminger/buildkit/sourcepolicy/pb"
 )
 
 func match(ctx context.Context, src *selectorCache, ref string, attrs map[string]string) (bool, error) {

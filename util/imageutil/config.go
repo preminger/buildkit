@@ -13,14 +13,14 @@ import (
 	"github.com/containerd/containerd/reference"
 	"github.com/containerd/containerd/remotes"
 	"github.com/containerd/containerd/remotes/docker"
-	"github.com/moby/buildkit/util/attestation"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/resolver/limited"
-	"github.com/moby/buildkit/util/resolver/retryhandler"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/attestation"
+	"github.com/preminger/buildkit/util/contentutil"
+	"github.com/preminger/buildkit/util/leaseutil"
+	"github.com/preminger/buildkit/util/resolver/limited"
+	"github.com/preminger/buildkit/util/resolver/retryhandler"
 )
 
 type ContentCache interface {

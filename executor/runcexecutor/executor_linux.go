@@ -8,11 +8,11 @@ import (
 
 	"github.com/containerd/console"
 	runc "github.com/containerd/go-runc"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/util/bklog"
 	"github.com/moby/sys/signal"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/util/bklog"
 	"golang.org/x/sync/errgroup"
 )
 

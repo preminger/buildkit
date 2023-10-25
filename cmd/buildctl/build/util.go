@@ -5,7 +5,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/moby/buildkit/client"
+	"github.com/preminger/buildkit/client"
 )
 
 // loadGithubEnv verify that url and token attributes exists in the

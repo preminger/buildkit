@@ -13,13 +13,13 @@ import (
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/errdefs"
 	"github.com/containerd/containerd/leases"
-	controlapi "github.com/moby/buildkit/api/services/control"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/cmd/buildkitd/config"
-	"github.com/moby/buildkit/util/leaseutil"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/cmd/buildkitd/config"
+	"github.com/preminger/buildkit/util/leaseutil"
 	bolt "go.etcd.io/bbolt"
 )
 

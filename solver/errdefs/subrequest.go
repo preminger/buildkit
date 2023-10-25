@@ -4,11 +4,11 @@ import (
 	fmt "fmt"
 
 	"github.com/containerd/typeurl"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/preminger/buildkit/util/grpcerrors"
 )
 
 func init() {
-	typeurl.Register((*Subrequest)(nil), "github.com/moby/buildkit", "errdefs.Subrequest+json")
+	typeurl.Register((*Subrequest)(nil), "github.com/preminger/buildkit", "errdefs.Subrequest+json")
 }
 
 type UnsupportedSubrequestError struct {

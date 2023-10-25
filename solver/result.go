@@ -5,7 +5,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/bklog"
 
 	"github.com/pkg/errors"
 )

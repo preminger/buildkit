@@ -18,10 +18,10 @@ import (
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/remotes/docker"
 	"github.com/gofrs/flock"
-	"github.com/moby/buildkit/util/appcontext"
-	"github.com/moby/buildkit/util/contentutil"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/appcontext"
+	"github.com/preminger/buildkit/util/contentutil"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/semaphore"
 )

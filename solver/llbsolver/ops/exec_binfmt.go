@@ -10,12 +10,12 @@ import (
 	"github.com/containerd/containerd/mount"
 	"github.com/containerd/containerd/platforms"
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/archutil"
-	"github.com/moby/buildkit/util/bklog"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/archutil"
+	"github.com/preminger/buildkit/util/bklog"
 	copy "github.com/tonistiigi/fsutil/copy"
 )
 

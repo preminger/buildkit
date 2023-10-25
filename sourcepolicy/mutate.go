@@ -3,10 +3,10 @@ package sourcepolicy
 import (
 	"context"
 
-	"github.com/moby/buildkit/solver/pb"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/bklog"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
+	spb "github.com/preminger/buildkit/sourcepolicy/pb"
+	"github.com/preminger/buildkit/util/bklog"
 )
 
 // mutate is a MutateFn which converts the source operation to the identifier and attributes provided by the policy.

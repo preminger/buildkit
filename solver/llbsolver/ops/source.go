@@ -5,13 +5,13 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver/ops/opsutils"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/source"
-	"github.com/moby/buildkit/worker"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver/ops/opsutils"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/source"
+	"github.com/preminger/buildkit/worker"
 	"golang.org/x/sync/semaphore"
 )
 

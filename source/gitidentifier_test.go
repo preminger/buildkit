@@ -31,9 +31,9 @@ func TestNewGitIdentifier(t *testing.T) {
 			},
 		},
 		{
-			url: "github.com/moby/buildkit.git#main",
+			url: "github.com/preminger/buildkit.git#main",
 			expected: GitIdentifier{
-				Remote: "https://github.com/moby/buildkit.git",
+				Remote: "https://github.com/preminger/buildkit.git",
 				Ref:    "main",
 			},
 		},

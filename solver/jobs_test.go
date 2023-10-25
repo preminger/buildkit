@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 )

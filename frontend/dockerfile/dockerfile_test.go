@@ -28,25 +28,25 @@ import (
 	"github.com/containerd/containerd/snapshots"
 	"github.com/containerd/continuity/fs/fstest"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	controlapi "github.com/moby/buildkit/api/services/control"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/builder"
-	gateway "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/upload/uploadprovider"
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/iohelper"
-	"github.com/moby/buildkit/util/testutil"
-	"github.com/moby/buildkit/util/testutil/httpserver"
-	"github.com/moby/buildkit/util/testutil/integration"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/frontend/dockerfile/builder"
+	gateway "github.com/preminger/buildkit/frontend/gateway/client"
+	"github.com/preminger/buildkit/frontend/subrequests"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/session/upload/uploadprovider"
+	"github.com/preminger/buildkit/solver/errdefs"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/contentutil"
+	"github.com/preminger/buildkit/util/iohelper"
+	"github.com/preminger/buildkit/util/testutil"
+	"github.com/preminger/buildkit/util/testutil/httpserver"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 
@@ -2325,7 +2325,7 @@ ADD %s /
 	require.NoError(t, err)
 	require.Equal(t, buf2.Bytes(), dt)
 
-	// https://github.com/moby/buildkit/issues/386
+	// https://github.com/preminger/buildkit/issues/386
 	dockerfile = []byte(fmt.Sprintf(`
 FROM scratch
 ADD %s /newname.tar.gz
@@ -6528,10 +6528,10 @@ COPY Dockerfile \
 func testReproSourceDateEpoch(t *testing.T, sb integration.Sandbox) {
 	integration.CheckFeatureCompat(t, sb, integration.FeatureOCIExporter, integration.FeatureSourceDateEpoch)
 	if sb.Snapshotter() == "native" {
-		t.Skip("the digest is not reproducible with the \"native\" snapshotter because hardlinks are processed in a different way: https://github.com/moby/buildkit/pull/3456#discussion_r1062650263")
+		t.Skip("the digest is not reproducible with the \"native\" snapshotter because hardlinks are processed in a different way: https://github.com/preminger/buildkit/pull/3456#discussion_r1062650263")
 	}
 	if runtime.GOARCH != "amd64" {
-		t.Skip("FIXME: the image cannot be pulled on non-amd64 (`docker.io/arm64v8/debian:bullseye-20230109-slim@...: not found`): https://github.com/moby/buildkit/pull/3456#discussion_r1068989918")
+		t.Skip("FIXME: the image cannot be pulled on non-amd64 (`docker.io/arm64v8/debian:bullseye-20230109-slim@...: not found`): https://github.com/preminger/buildkit/pull/3456#discussion_r1068989918")
 	}
 
 	f := getFrontend(t, sb)
@@ -6539,7 +6539,7 @@ func testReproSourceDateEpoch(t *testing.T, sb integration.Sandbox) {
 	tm := time.Date(2023, time.January, 10, 12, 34, 56, 0, time.UTC)
 	t.Logf("SOURCE_DATE_EPOCH=%d", tm.Unix())
 
-	dockerfile := []byte(`# The base image cannot be busybox, due to https://github.com/moby/buildkit/issues/3455
+	dockerfile := []byte(`# The base image cannot be busybox, due to https://github.com/preminger/buildkit/issues/3455
 FROM --platform=linux/amd64 debian:bullseye-20230109-slim@sha256:1acb06a0c31fb467eb8327ad361f1091ab265e0bf26d452dea45dcb0c0ea5e75
 RUN touch /foo
 RUN touch /foo.1
@@ -6552,12 +6552,12 @@ RUN rm -f /foo-2010.1
 RUN rm -f /foo-2030.1
 
 # Limit the timestamp upper bound to SOURCE_DATE_EPOCH.
-# Workaround for https://github.com/moby/buildkit/issues/3180
+# Workaround for https://github.com/preminger/buildkit/issues/3180
 ARG SOURCE_DATE_EPOCH
 RUN find $( ls / | grep -E -v "^(dev|mnt|proc|sys)$" ) -newermt "@${SOURCE_DATE_EPOCH}" -writable -xdev | xargs touch --date="@${SOURCE_DATE_EPOCH}" --no-dereference
 
 # Squashing is needed to apply the touched timestamps across multiple "RUN" instructions.
-# This squashing also addresses non-reproducibility of whiteout timestamps (https://github.com/moby/buildkit/issues/3168).
+# This squashing also addresses non-reproducibility of whiteout timestamps (https://github.com/preminger/buildkit/issues/3168).
 FROM scratch
 COPY --from=0 / /
 `)

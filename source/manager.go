@@ -4,10 +4,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
 )
 
 type Source interface {

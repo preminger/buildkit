@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/http/httptrace"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/bklog"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"go.opentelemetry.io/otel/attribute"

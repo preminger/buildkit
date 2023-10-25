@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/client/buildid"
-	"github.com/moby/buildkit/frontend/gateway"
-	gwapi "github.com/moby/buildkit/frontend/gateway/pb"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/buildid"
+	"github.com/preminger/buildkit/frontend/gateway"
+	gwapi "github.com/preminger/buildkit/frontend/gateway/pb"
 	"google.golang.org/grpc"
 )
 

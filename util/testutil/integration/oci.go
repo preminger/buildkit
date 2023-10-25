@@ -57,7 +57,7 @@ func (s *oci) New(ctx context.Context, cfg *BackendConfig) (Backend, func() erro
 	if err := requireRoot(); err != nil {
 		return nil, nil, err
 	}
-	// Include use of --oci-worker-labels to trigger https://github.com/moby/buildkit/pull/603
+	// Include use of --oci-worker-labels to trigger https://github.com/preminger/buildkit/pull/603
 	buildkitdArgs := []string{"buildkitd", "--oci-worker=true", "--containerd-worker=false", "--oci-worker-gc=false", "--oci-worker-labels=org.mobyproject.buildkit.worker.sandbox=true"}
 
 	if s.snapshotter != "" {

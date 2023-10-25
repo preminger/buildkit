@@ -11,13 +11,13 @@ import (
 	"github.com/containerd/containerd/errdefs"
 	"github.com/containerd/containerd/images/converter"
 	"github.com/containerd/containerd/labels"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/iohelper"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/compression"
+	"github.com/preminger/buildkit/util/iohelper"
 )
 
 // getConverter returns converter function according to the specified compression type.

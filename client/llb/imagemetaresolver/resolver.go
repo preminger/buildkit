@@ -8,13 +8,13 @@ import (
 	"github.com/containerd/containerd/platforms"
 	"github.com/containerd/containerd/remotes"
 	"github.com/containerd/containerd/remotes/docker"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/imageutil"
-	"github.com/moby/buildkit/version"
 	"github.com/moby/locker"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/util/contentutil"
+	"github.com/preminger/buildkit/util/imageutil"
+	"github.com/preminger/buildkit/version"
 )
 
 var defaultImageMetaResolver llb.ImageMetaResolver

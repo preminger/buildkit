@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/util/progress"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/progress"
 )
 
 // flightcontrol is like singleflight but with support for cancellation and

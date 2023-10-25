@@ -6,7 +6,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

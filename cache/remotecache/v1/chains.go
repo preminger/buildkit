@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/content"
-	"github.com/moby/buildkit/solver"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/solver"
 )
 
 func NewCacheChains() *CacheChains {

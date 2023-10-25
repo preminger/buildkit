@@ -6,8 +6,8 @@ package oci
 import (
 	"github.com/containerd/containerd/oci"
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/solver/pb"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 func generateMountOpts(resolvConf, hostsFile string) ([]oci.SpecOpts, error) {

@@ -6,8 +6,8 @@ import (
 	"net"
 	"syscall"
 
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 type Meta struct {

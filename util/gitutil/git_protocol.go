@@ -3,7 +3,7 @@ package gitutil
 import (
 	"strings"
 
-	"github.com/moby/buildkit/util/sshutil"
+	"github.com/preminger/buildkit/util/sshutil"
 )
 
 const (

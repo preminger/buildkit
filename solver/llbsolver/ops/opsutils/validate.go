@@ -1,8 +1,8 @@
 package opsutils
 
 import (
-	"github.com/moby/buildkit/solver/pb"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 func Validate(op *pb.Op) error {

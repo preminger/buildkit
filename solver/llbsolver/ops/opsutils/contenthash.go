@@ -5,12 +5,12 @@ import (
 	"context"
 	"path"
 
-	"github.com/moby/buildkit/cache/contenthash"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/worker"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/contenthash"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/worker"
 	"golang.org/x/sync/errgroup"
 )
 

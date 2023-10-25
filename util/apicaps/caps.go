@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	pb "github.com/moby/buildkit/util/apicaps/pb"
 	"github.com/pkg/errors"
+	pb "github.com/preminger/buildkit/util/apicaps/pb"
 )
 
 type PBCap = pb.APICap

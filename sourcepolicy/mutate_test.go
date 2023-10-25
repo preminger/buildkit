@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/solver/pb"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
+	"github.com/preminger/buildkit/solver/pb"
+	spb "github.com/preminger/buildkit/sourcepolicy/pb"
 	"github.com/stretchr/testify/require"
 )
 

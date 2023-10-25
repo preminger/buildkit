@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd"
-	gatewayapi "github.com/moby/buildkit/frontend/gateway/pb"
+	gatewayapi "github.com/preminger/buildkit/frontend/gateway/pb"
 )
 
 func TestContainerdUnknownExitStatus(t *testing.T) {

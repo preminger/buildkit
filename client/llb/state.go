@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	"github.com/containerd/containerd/platforms"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/apicaps"
 )
 
 type StateOption func(State) State

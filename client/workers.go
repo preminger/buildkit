@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
-	apitypes "github.com/moby/buildkit/api/types"
-	"github.com/moby/buildkit/solver/pb"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
+	apitypes "github.com/preminger/buildkit/api/types"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 // WorkerInfo contains information about a worker

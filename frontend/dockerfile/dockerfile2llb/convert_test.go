@@ -3,9 +3,9 @@ package dockerfile2llb
 import (
 	"testing"
 
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
-	"github.com/moby/buildkit/util/appcontext"
+	"github.com/preminger/buildkit/frontend/dockerfile/instructions"
+	"github.com/preminger/buildkit/frontend/dockerfile/shell"
+	"github.com/preminger/buildkit/util/appcontext"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -60,13 +60,13 @@ COPY --from=0 f2 /
 	assert.Error(t, err)
 
 	df = `FROM scratch
-	ADD http://github.com/moby/buildkit/blob/master/README.md /
+	ADD http://github.com/preminger/buildkit/blob/master/README.md /
 		`
 	_, _, _, err = Dockerfile2LLB(appcontext.Context(), []byte(df), ConvertOpt{})
 	assert.NoError(t, err)
 
 	df = `FROM scratch
-	COPY http://github.com/moby/buildkit/blob/master/README.md /
+	COPY http://github.com/preminger/buildkit/blob/master/README.md /
 		`
 	_, _, _, err = Dockerfile2LLB(appcontext.Context(), []byte(df), ConvertOpt{})
 	assert.EqualError(t, err, "source can't be a URL for COPY")

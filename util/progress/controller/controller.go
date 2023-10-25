@@ -5,11 +5,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/progress"
 )
 
 type Controller struct {

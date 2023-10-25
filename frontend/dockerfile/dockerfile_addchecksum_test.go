@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/frontend/dockerfile/builder"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/testutil/httpserver"
-	"github.com/moby/buildkit/util/testutil/integration"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/frontend/dockerfile/builder"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/util/testutil/httpserver"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

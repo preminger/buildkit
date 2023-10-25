@@ -5,8 +5,8 @@ import (
 
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/strslice"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/frontend/dockerfile/parser"
 )
 
 // KeyValuePair represents an arbitrary named value.

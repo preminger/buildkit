@@ -16,15 +16,15 @@ import (
 
 	ctdsnapshot "github.com/containerd/containerd/snapshots"
 	"github.com/containerd/containerd/snapshots/overlay"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/executor/oci"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/network/netproviders"
-	"github.com/moby/buildkit/worker/base"
-	"github.com/moby/buildkit/worker/tests"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/executor/oci"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/util/network/netproviders"
+	"github.com/preminger/buildkit/worker/base"
+	"github.com/preminger/buildkit/worker/tests"
 	"github.com/stretchr/testify/require"
 )
 
@@ -138,7 +138,7 @@ func TestRuncWorker(t *testing.T) {
 	target, err = lm.Mount()
 	require.NoError(t, err)
 
-	//Verifies fix for issue https://github.com/moby/buildkit/issues/429
+	//Verifies fix for issue https://github.com/preminger/buildkit/issues/429
 	dt, err := os.ReadFile(filepath.Join(target, "run", "bar"))
 
 	require.NoError(t, err)

@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/content"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/compression"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 // Vertex is a node in a build graph. It defines an interface for a

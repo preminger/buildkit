@@ -4,9 +4,9 @@ import (
 	"encoding/csv"
 	"strings"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/secrets/secretsprovider"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/session/secrets/secretsprovider"
 )
 
 // ParseSecret parses --secret

@@ -3,9 +3,9 @@ package progresswriter
 import (
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/identity"
 )
 
 type Writer interface {

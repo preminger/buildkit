@@ -11,12 +11,12 @@ import (
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/errdefs"
 	"github.com/containerd/containerd/mount"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/overlay"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/compression"
+	"github.com/preminger/buildkit/util/overlay"
 )
 
 var emptyDesc = ocispecs.Descriptor{}

@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/session"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"

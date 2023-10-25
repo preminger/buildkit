@@ -6,13 +6,13 @@ import (
 
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/content/proxy"
-	controlapi "github.com/moby/buildkit/api/services/control"
-	"github.com/moby/buildkit/client"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/appcontext"
-	"github.com/moby/buildkit/util/progress/progresswriter"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
+	"github.com/preminger/buildkit/client"
+	bccommon "github.com/preminger/buildkit/cmd/buildctl/common"
+	"github.com/preminger/buildkit/util/appcontext"
+	"github.com/preminger/buildkit/util/progress/progresswriter"
 	"github.com/urfave/cli"
 )
 

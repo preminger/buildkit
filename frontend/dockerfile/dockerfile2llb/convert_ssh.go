@@ -1,10 +1,10 @@
 package dockerfile2llb
 
 import (
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/frontend/dockerfile/instructions"
+	"github.com/preminger/buildkit/frontend/dockerfile/parser"
 )
 
 func dispatchSSH(d *dispatchState, m *instructions.Mount, loc []parser.Range) (llb.RunOption, error) {

@@ -3,11 +3,11 @@ package forwarder
 import (
 	"context"
 
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/worker"
+	"github.com/preminger/buildkit/frontend"
+	"github.com/preminger/buildkit/frontend/gateway/client"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/worker"
 )
 
 func NewGatewayForwarder(w worker.Infos, f client.BuildFunc) frontend.Frontend {

@@ -6,11 +6,11 @@ import (
 
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/content/proxy"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/appcontext"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	bccommon "github.com/preminger/buildkit/cmd/buildctl/common"
+	"github.com/preminger/buildkit/util/appcontext"
 	"github.com/urfave/cli"
 )
 

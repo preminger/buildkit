@@ -3,9 +3,9 @@ package gateway
 import (
 	"net"
 
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/solver/pb"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 func ParseExtraHosts(ips []*pb.HostIP) ([]executor.HostIP, error) {

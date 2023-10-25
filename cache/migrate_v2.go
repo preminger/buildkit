@@ -11,11 +11,11 @@ import (
 	"github.com/containerd/containerd/images"
 	"github.com/containerd/containerd/leases"
 	"github.com/containerd/containerd/snapshots"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/bklog"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/metadata"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/util/bklog"
 )
 
 func migrateChainID(si *metadata.StorageItem, all map[string]*metadata.StorageItem) (digest.Digest, digest.Digest, error) {

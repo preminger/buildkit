@@ -3,8 +3,8 @@ package solver
 import (
 	"context"
 
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/progress"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/progress"
 
 	digest "github.com/opencontainers/go-digest"
 )

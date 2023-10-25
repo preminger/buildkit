@@ -3,10 +3,10 @@ package worker
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
+	"github.com/preminger/buildkit/cache"
+	cacheconfig "github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
 )
 
 func NewWorkerRefResult(ref cache.ImmutableRef, worker Worker) solver.Result {

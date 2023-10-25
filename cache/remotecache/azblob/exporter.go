@@ -10,14 +10,14 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 	"github.com/containerd/containerd/content"
-	"github.com/moby/buildkit/cache/remotecache"
-	v1 "github.com/moby/buildkit/cache/remotecache/v1"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/remotecache"
+	v1 "github.com/preminger/buildkit/cache/remotecache/v1"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/compression"
+	"github.com/preminger/buildkit/util/progress"
 	"github.com/sirupsen/logrus"
 )
 

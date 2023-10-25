@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/moby/buildkit/util/tracing/detect"
+	"github.com/preminger/buildkit/util/tracing/detect"
 	"go.opentelemetry.io/otel/exporters/jaeger"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )

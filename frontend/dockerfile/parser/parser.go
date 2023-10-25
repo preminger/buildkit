@@ -12,9 +12,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/moby/buildkit/frontend/dockerfile/command"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/frontend/dockerfile/command"
+	"github.com/preminger/buildkit/frontend/dockerfile/shell"
 )
 
 // Node is a structure used to represent a parse tree.

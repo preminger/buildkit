@@ -5,9 +5,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/upload"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/session/upload"
 )
 
 func newTransport(rt http.RoundTripper, sm *session.Manager, g session.Group) http.RoundTripper {

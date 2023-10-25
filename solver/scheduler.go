@@ -5,10 +5,10 @@ import (
 	"os"
 	"sync"
 
-	"github.com/moby/buildkit/solver/internal/pipe"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/cond"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/internal/pipe"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/cond"
 )
 
 var debugScheduler = false // TODO: replace with logs in build trace

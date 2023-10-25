@@ -6,10 +6,10 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/solver/pb"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/frontend/dockerfile/instructions"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 func detectRunMount(cmd *command, allDispatchStates *dispatchStates) bool {

@@ -1,7 +1,7 @@
 package config
 
 import (
-	resolverconfig "github.com/moby/buildkit/util/resolver/config"
+	resolverconfig "github.com/preminger/buildkit/util/resolver/config"
 )
 
 // Config provides containerd configuration data for the server

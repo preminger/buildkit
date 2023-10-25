@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/identity"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/executor"
+	"github.com/preminger/buildkit/identity"
 )
 
 const defaultHostname = "buildkitsandbox"

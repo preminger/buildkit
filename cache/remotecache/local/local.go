@@ -6,13 +6,13 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/content"
-	"github.com/moby/buildkit/cache/remotecache"
-	"github.com/moby/buildkit/session"
-	sessioncontent "github.com/moby/buildkit/session/content"
-	"github.com/moby/buildkit/util/compression"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/remotecache"
+	"github.com/preminger/buildkit/session"
+	sessioncontent "github.com/preminger/buildkit/session/content"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 const (

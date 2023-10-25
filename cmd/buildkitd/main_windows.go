@@ -7,8 +7,8 @@ import (
 	"crypto/tls"
 	"net"
 
-	_ "github.com/moby/buildkit/solver/llbsolver/ops"
 	"github.com/pkg/errors"
+	_ "github.com/preminger/buildkit/solver/llbsolver/ops"
 )
 
 func listenFD(addr string, tlsConfig *tls.Config) (net.Listener, error) {

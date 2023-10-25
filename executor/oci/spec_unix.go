@@ -13,17 +13,17 @@ import (
 	cdseccomp "github.com/containerd/containerd/pkg/seccomp"
 	"github.com/docker/docker/pkg/idtools"
 	"github.com/docker/docker/profiles/seccomp"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/entitlements/security"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	selinux "github.com/opencontainers/selinux/go-selinux"
 	"github.com/opencontainers/selinux/go-selinux/label"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/entitlements/security"
 )
 
 func generateMountOpts(resolvConf, hostsFile string) ([]oci.SpecOpts, error) {
 	return []oci.SpecOpts{
-		// https://github.com/moby/buildkit/issues/429
+		// https://github.com/preminger/buildkit/issues/429
 		withRemovedMount("/run"),
 		withROBind(resolvConf, "/etc/resolv.conf"),
 		withROBind(hostsFile, "/etc/hosts"),

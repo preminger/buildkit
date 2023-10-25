@@ -58,21 +58,21 @@ func TestParseGitRef(t *testing.T) {
 			},
 		},
 		{
-			ref: "github.com/moby/buildkit",
+			ref: "github.com/preminger/buildkit",
 			expected: &GitRef{
-				Remote:                     "github.com/moby/buildkit",
+				Remote:                     "github.com/preminger/buildkit",
 				ShortName:                  "buildkit",
 				IndistinguishableFromLocal: true,
 			},
 		},
 		{
-			ref:      "https://github.com/moby/buildkit",
+			ref:      "https://github.com/preminger/buildkit",
 			expected: nil,
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git",
+			ref: "https://github.com/preminger/buildkit.git",
 			expected: &GitRef{
-				Remote:    "https://github.com/moby/buildkit.git",
+				Remote:    "https://github.com/preminger/buildkit.git",
 				ShortName: "buildkit",
 			},
 		},

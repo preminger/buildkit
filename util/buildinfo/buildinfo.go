@@ -1,6 +1,6 @@
 // Package buildinfo implements utilities for build information.
 //
-// Deprecated: Build information is deprecated: https://github.com/moby/buildkit/blob/master/docs/deprecated.md
+// Deprecated: Build information is deprecated: https://github.com/preminger/buildkit/blob/master/docs/deprecated.md
 package buildinfo
 
 import (
@@ -12,12 +12,12 @@ import (
 
 	ctnref "github.com/containerd/containerd/reference"
 	"github.com/docker/distribution/reference"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
-	"github.com/moby/buildkit/source"
-	binfotypes "github.com/moby/buildkit/util/buildinfo/types"
-	"github.com/moby/buildkit/util/urlutil"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/exporter/containerimage/exptypes"
+	"github.com/preminger/buildkit/solver/llbsolver/provenance"
+	"github.com/preminger/buildkit/source"
+	binfotypes "github.com/preminger/buildkit/util/buildinfo/types"
+	"github.com/preminger/buildkit/util/urlutil"
 )
 
 func FromProvenance(c *provenance.Capture) (*binfotypes.BuildInfo, error) {

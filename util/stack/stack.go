@@ -17,7 +17,7 @@ var helpers map[string]struct{}
 var helpersMu sync.RWMutex
 
 func init() {
-	typeurl.Register((*Stack)(nil), "github.com/moby/buildkit", "stack.Stack+json")
+	typeurl.Register((*Stack)(nil), "github.com/preminger/buildkit", "stack.Stack+json")
 
 	helpers = map[string]struct{}{}
 }

@@ -7,10 +7,10 @@ import (
 	"net"
 	"sort"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/system"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/system"
 )
 
 func NewExecOp(base State, proxyEnv *ProxyEnv, readOnly bool, c Constraints) *ExecOp {

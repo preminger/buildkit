@@ -8,9 +8,9 @@ import (
 	"time"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/grpcerrors"
 	"github.com/sirupsen/logrus"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
 	"go.opentelemetry.io/otel/trace"

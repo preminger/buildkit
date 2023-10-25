@@ -6,7 +6,7 @@ package errdefs
 import (
 	fmt "fmt"
 	proto "github.com/gogo/protobuf/proto"
-	pb "github.com/moby/buildkit/solver/pb"
+	pb "github.com/preminger/buildkit/solver/pb"
 	math "math"
 )
 

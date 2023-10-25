@@ -13,14 +13,14 @@ func TestParseProtocol(t *testing.T) {
 		remote   string
 	}{
 		{
-			url:      "http://github.com/moby/buildkit",
+			url:      "http://github.com/preminger/buildkit",
 			protocol: HTTPProtocol,
-			remote:   "github.com/moby/buildkit",
+			remote:   "github.com/preminger/buildkit",
 		},
 		{
-			url:      "https://github.com/moby/buildkit",
+			url:      "https://github.com/preminger/buildkit",
 			protocol: HTTPSProtocol,
-			remote:   "github.com/moby/buildkit",
+			remote:   "github.com/preminger/buildkit",
 		},
 		{
 			url:      "git@github.com:moby/buildkit.git",

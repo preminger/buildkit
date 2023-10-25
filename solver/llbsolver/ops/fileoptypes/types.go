@@ -3,8 +3,8 @@ package fileoptypes
 import (
 	"context"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 type Ref interface {

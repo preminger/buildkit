@@ -9,17 +9,17 @@ import (
 	"github.com/containerd/containerd/content"
 	"github.com/containerd/containerd/errdefs"
 	"github.com/containerd/containerd/reference"
-	"github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/progress/logs"
-	"github.com/moby/buildkit/util/pull/pullprogress"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/compression"
+	"github.com/preminger/buildkit/util/contentutil"
+	"github.com/preminger/buildkit/util/leaseutil"
+	"github.com/preminger/buildkit/util/progress/logs"
+	"github.com/preminger/buildkit/util/pull/pullprogress"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -159,7 +159,7 @@ func (sr *immutableRef) getRemote(ctx context.Context, createIfNeeded bool, refC
 		// from before lease based storage. If so, we should detect
 		// the media type from blob data.
 		//
-		// Discussion: https://github.com/moby/buildkit/pull/1277#discussion_r352795429
+		// Discussion: https://github.com/preminger/buildkit/pull/1277#discussion_r352795429
 		if desc.MediaType == "" {
 			desc.MediaType, err = compression.DetectLayerMediaType(ctx, sr.cm.ContentStore, desc.Digest, false)
 			if err != nil {

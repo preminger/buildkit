@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"time"
 
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/exporter/util/epoch"
-	"github.com/moby/buildkit/util/compression"
 	"github.com/pkg/errors"
+	cacheconfig "github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/exporter/util/epoch"
+	"github.com/preminger/buildkit/util/compression"
 	"github.com/sirupsen/logrus"
 )
 
@@ -36,8 +36,8 @@ type ImageCommitOpts struct {
 
 	ForceInlineAttestations bool // force inline attestations to be attached
 
-	BuildInfo      bool // Deprecated: Build information is deprecated: https://github.com/moby/buildkit/blob/master/docs/deprecated.md
-	BuildInfoAttrs bool // Deprecated: Build information is deprecated: https://github.com/moby/buildkit/blob/master/docs/deprecated.md
+	BuildInfo      bool // Deprecated: Build information is deprecated: https://github.com/preminger/buildkit/blob/master/docs/deprecated.md
+	BuildInfoAttrs bool // Deprecated: Build information is deprecated: https://github.com/preminger/buildkit/blob/master/docs/deprecated.md
 }
 
 func (c *ImageCommitOpts) Load(opt map[string]string) (map[string]string, error) {

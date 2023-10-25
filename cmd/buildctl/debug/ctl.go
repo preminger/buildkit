@@ -1,10 +1,10 @@
 package debug
 
 import (
-	controlapi "github.com/moby/buildkit/api/services/control"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/appcontext"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
+	bccommon "github.com/preminger/buildkit/cmd/buildctl/common"
+	"github.com/preminger/buildkit/util/appcontext"
 	"github.com/urfave/cli"
 )
 

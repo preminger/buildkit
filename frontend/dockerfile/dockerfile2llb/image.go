@@ -1,9 +1,9 @@
 package dockerfile2llb
 
 import (
-	"github.com/moby/buildkit/exporter/containerimage/image"
-	"github.com/moby/buildkit/util/system"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/exporter/containerimage/image"
+	"github.com/preminger/buildkit/util/system"
 )
 
 // Image is the JSON structure which describes some basic information about the image.

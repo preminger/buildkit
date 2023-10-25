@@ -6,11 +6,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/bklog"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/util/progress"
 )
 
 func (j *Job) Status(ctx context.Context, ch chan *client.SolveStatus) error {

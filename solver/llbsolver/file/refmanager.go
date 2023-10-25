@@ -3,12 +3,12 @@ package file
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/llbsolver/ops/fileoptypes"
-	"github.com/moby/buildkit/util/bklog"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/solver/llbsolver/ops/fileoptypes"
+	"github.com/preminger/buildkit/util/bklog"
 )
 
 func NewRefManager(cm cache.Manager, name string) *RefManager {

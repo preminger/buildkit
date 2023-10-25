@@ -3,9 +3,9 @@ package secrets
 import (
 	"context"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/util/grpcerrors"
 	"google.golang.org/grpc/codes"
 )
 

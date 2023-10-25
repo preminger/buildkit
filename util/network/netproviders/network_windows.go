@@ -4,7 +4,7 @@
 package netproviders
 
 import (
-	"github.com/moby/buildkit/util/network"
+	"github.com/preminger/buildkit/util/network"
 	"github.com/sirupsen/logrus"
 )
 

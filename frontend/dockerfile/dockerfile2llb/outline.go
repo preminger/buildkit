@@ -3,10 +3,10 @@ package dockerfile2llb
 import (
 	"sort"
 
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	pb "github.com/moby/buildkit/solver/pb"
+	"github.com/preminger/buildkit/frontend/dockerfile/instructions"
+	"github.com/preminger/buildkit/frontend/dockerfile/parser"
+	"github.com/preminger/buildkit/frontend/subrequests/outline"
+	pb "github.com/preminger/buildkit/solver/pb"
 )
 
 type outlineCapture struct {

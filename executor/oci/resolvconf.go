@@ -7,8 +7,8 @@ import (
 
 	"github.com/docker/docker/libnetwork/resolvconf"
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/util/flightcontrol"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/flightcontrol"
 )
 
 var g flightcontrol.Group

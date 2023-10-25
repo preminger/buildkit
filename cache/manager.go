@@ -15,18 +15,18 @@ import (
 	"github.com/containerd/containerd/gc"
 	"github.com/containerd/containerd/leases"
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/flightcontrol"
-	"github.com/moby/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
 	imagespecidentity "github.com/opencontainers/image-spec/identity"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/cache/metadata"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/util/bklog"
+	"github.com/preminger/buildkit/util/flightcontrol"
+	"github.com/preminger/buildkit/util/progress"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sync/errgroup"
 )
@@ -465,7 +465,7 @@ func (cm *cacheManager) getRecord(ctx context.Context, id string, opts ...RefOpt
 
 	// TODO:(sipsma) this is kludge to deal with a bug in v0.10.{0,1} where
 	// merge and diff refs didn't have committed set to true:
-	// https://github.com/moby/buildkit/issues/2740
+	// https://github.com/preminger/buildkit/issues/2740
 	if kind := rec.kind(); kind == Merge || kind == Diff {
 		rec.mutable = false
 	}

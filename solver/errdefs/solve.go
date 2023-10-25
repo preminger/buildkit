@@ -6,12 +6,12 @@ import (
 
 	"github.com/containerd/typeurl"
 	"github.com/golang/protobuf/jsonpb" //nolint:staticcheck
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/grpcerrors"
 )
 
 func init() {
-	typeurl.Register((*Solve)(nil), "github.com/moby/buildkit", "errdefs.Solve+json")
+	typeurl.Register((*Solve)(nil), "github.com/preminger/buildkit", "errdefs.Solve+json")
 }
 
 //nolint:revive

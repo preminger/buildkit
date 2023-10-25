@@ -4,8 +4,8 @@ import (
 	"context"
 	"os"
 
-	"github.com/moby/buildkit/session/secrets"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session/secrets"
 	"github.com/tonistiigi/units"
 )
 

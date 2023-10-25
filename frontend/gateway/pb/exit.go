@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/containerd/typeurl"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/preminger/buildkit/util/grpcerrors"
 )
 
 const (
@@ -18,7 +18,7 @@ const (
 )
 
 func init() {
-	typeurl.Register((*ExitMessage)(nil), "github.com/moby/buildkit", "gatewayapi.ExitMessage+json")
+	typeurl.Register((*ExitMessage)(nil), "github.com/preminger/buildkit", "gatewayapi.ExitMessage+json")
 }
 
 // ExitError will be returned when the container process exits with a non-zero

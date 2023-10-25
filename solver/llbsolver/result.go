@@ -3,13 +3,13 @@ package llbsolver
 import (
 	"context"
 
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
-	"github.com/moby/buildkit/worker"
 	"github.com/pkg/errors"
+	cacheconfig "github.com/preminger/buildkit/cache/config"
+	"github.com/preminger/buildkit/frontend"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver/provenance"
+	"github.com/preminger/buildkit/worker"
 )
 
 type Result struct {

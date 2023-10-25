@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/docker/go-units"
-	"github.com/moby/buildkit/util/suggest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/suggest"
 )
 
 const MountTypeBind = "bind"

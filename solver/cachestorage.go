@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/compression"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 var ErrNotFound = errors.Errorf("not found")

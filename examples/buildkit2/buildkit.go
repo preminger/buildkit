@@ -5,8 +5,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/system"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/util/system"
 )
 
 type buildOpt struct {
@@ -65,7 +65,7 @@ func containerd(version string) llb.State {
 }
 
 func buildkit(opt buildOpt) llb.State {
-	run := goRepo(goBuildBase(), "github.com/moby/buildkit", "master")
+	run := goRepo(goBuildBase(), "github.com/preminger/buildkit", "master")
 
 	buildkitdOCIWorkerOnly := run(llb.Shlex("go build -o ./bin/buildkitd.oci_only -tags no_containerd_worker ./cmd/buildkitd"))
 

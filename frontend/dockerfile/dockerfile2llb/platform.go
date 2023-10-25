@@ -2,8 +2,8 @@ package dockerfile2llb
 
 import (
 	"github.com/containerd/containerd/platforms"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
+	"github.com/preminger/buildkit/frontend/dockerfile/instructions"
 )
 
 type platformOpt struct {

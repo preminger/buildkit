@@ -3,7 +3,7 @@ package build
 import (
 	"testing"
 
-	"github.com/moby/buildkit/client"
+	"github.com/preminger/buildkit/client"
 	"github.com/stretchr/testify/require"
 )
 

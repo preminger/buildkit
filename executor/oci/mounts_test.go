@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/oci"
-	"github.com/moby/buildkit/util/appcontext"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/preminger/buildkit/util/appcontext"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -9,7 +9,7 @@ import (
 	gogotypes "github.com/gogo/protobuf/types"
 	"github.com/golang/protobuf/proto" //nolint:staticcheck
 	"github.com/golang/protobuf/ptypes/any"
-	"github.com/moby/buildkit/util/stack"
+	"github.com/preminger/buildkit/util/stack"
 	"github.com/sirupsen/logrus"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc/codes"

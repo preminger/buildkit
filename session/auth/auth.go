@@ -6,9 +6,9 @@ import (
 	"crypto/subtle"
 	"sync"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/util/grpcerrors"
 	"golang.org/x/crypto/nacl/sign"
 	"google.golang.org/grpc/codes"
 )

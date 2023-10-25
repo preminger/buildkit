@@ -1,10 +1,10 @@
 // Package binfotypes implements types for build information.
 //
-// Deprecated: Build information is deprecated: https://github.com/moby/buildkit/blob/master/docs/deprecated.md
+// Deprecated: Build information is deprecated: https://github.com/preminger/buildkit/blob/master/docs/deprecated.md
 package binfotypes
 
 import (
-	srctypes "github.com/moby/buildkit/source/types"
+	srctypes "github.com/preminger/buildkit/source/types"
 )
 
 // ImageConfigField defines the key of build dependencies.

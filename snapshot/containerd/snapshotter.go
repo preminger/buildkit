@@ -7,8 +7,8 @@ import (
 	"github.com/containerd/containerd/namespaces"
 	"github.com/containerd/containerd/snapshots"
 	"github.com/docker/docker/pkg/idtools"
-	"github.com/moby/buildkit/snapshot"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/snapshot"
 )
 
 func NewSnapshotter(name string, snapshotter snapshots.Snapshotter, ns string, idmap *idtools.IdentityMapping) snapshot.Snapshotter {

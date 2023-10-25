@@ -3,9 +3,9 @@ package client
 import (
 	"context"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
-	apitypes "github.com/moby/buildkit/api/types"
 	"github.com/pkg/errors"
+	controlapi "github.com/preminger/buildkit/api/services/control"
+	apitypes "github.com/preminger/buildkit/api/types"
 )
 
 type Info struct {

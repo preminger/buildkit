@@ -7,8 +7,8 @@ import (
 )
 
 func TestIsImplicitSSHTransport(t *testing.T) {
-	require.False(t, IsImplicitSSHTransport("http://github.com/moby/buildkit"))
-	require.False(t, IsImplicitSSHTransport("github.com/moby/buildkit"))
+	require.False(t, IsImplicitSSHTransport("http://github.com/preminger/buildkit"))
+	require.False(t, IsImplicitSSHTransport("github.com/preminger/buildkit"))
 	require.False(t, IsImplicitSSHTransport("github.com:moby/buildkit.git"))
 	require.False(t, IsImplicitSSHTransport("helloworld.net"))
 	require.False(t, IsImplicitSSHTransport("git@helloworld.net"))

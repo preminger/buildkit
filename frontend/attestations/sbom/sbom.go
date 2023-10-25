@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	"github.com/moby/buildkit/client/llb"
-	gatewaypb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/solver/result"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	gatewaypb "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/solver/result"
 )
 
 const (

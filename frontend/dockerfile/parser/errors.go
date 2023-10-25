@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"github.com/moby/buildkit/util/stack"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/stack"
 )
 
 // ErrorLocation gives a location in source code that caused the error

@@ -6,12 +6,12 @@ import (
 	"strconv"
 
 	slsa02 "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/v0.2"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	gatewaypb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver"
-	"github.com/moby/buildkit/solver/result"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/exporter/containerimage/exptypes"
+	gatewaypb "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver"
+	"github.com/preminger/buildkit/solver/result"
 )
 
 func ProvenanceProcessor(attrs map[string]string) llbsolver.Processor {

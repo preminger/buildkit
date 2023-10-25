@@ -3,10 +3,10 @@ package netproviders
 import (
 	"os"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/network"
-	"github.com/moby/buildkit/util/network/cniprovider"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/network"
+	"github.com/preminger/buildkit/util/network/cniprovider"
 )
 
 type Opt struct {

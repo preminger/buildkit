@@ -3,14 +3,14 @@ package proc
 import (
 	"context"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/frontend/attestations/sbom"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver"
-	"github.com/moby/buildkit/solver/result"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/exporter/containerimage/exptypes"
+	"github.com/preminger/buildkit/frontend"
+	"github.com/preminger/buildkit/frontend/attestations/sbom"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/llbsolver"
+	"github.com/preminger/buildkit/solver/result"
 )
 
 func SBOMProcessor(scannerRef string, useCache bool) llbsolver.Processor {

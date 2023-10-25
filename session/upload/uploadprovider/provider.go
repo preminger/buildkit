@@ -5,9 +5,9 @@ import (
 	"path"
 	"sync"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session/upload"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/session/upload"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

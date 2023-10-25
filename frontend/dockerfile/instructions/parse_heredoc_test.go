@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/docker/docker/api/types/strslice"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
+	"github.com/preminger/buildkit/frontend/dockerfile/parser"
 	"github.com/stretchr/testify/require"
 )
 

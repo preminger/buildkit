@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/compression"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/util/compression"
 )
 
 func NewInMemoryCacheStorage() CacheKeyStorage {

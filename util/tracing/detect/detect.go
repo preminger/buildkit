@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/moby/buildkit/util/bklog"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/util/bklog"
 	"go.opentelemetry.io/otel/sdk/resource"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.7.0"

@@ -1,7 +1,7 @@
 package build
 
 import (
-	"github.com/moby/buildkit/util/entitlements"
+	"github.com/preminger/buildkit/util/entitlements"
 )
 
 // ParseAllow parses --allow

@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/containerd/containerd/content"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/util/progress"
 )
 
 type DescHandler struct {

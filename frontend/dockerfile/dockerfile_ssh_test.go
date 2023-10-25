@@ -10,11 +10,11 @@ import (
 	"testing"
 
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/frontend/dockerfile/builder"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/preminger/buildkit/client"
+	"github.com/preminger/buildkit/frontend/dockerfile/builder"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/session/sshforward/sshprovider"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

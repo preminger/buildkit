@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/testutil"
+	"github.com/preminger/buildkit/solver"
+	"github.com/preminger/buildkit/solver/testutil"
 	"github.com/stretchr/testify/require"
 )
 

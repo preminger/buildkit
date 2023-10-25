@@ -3,8 +3,8 @@ package client
 import (
 	"time"
 
-	"github.com/moby/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
+	"github.com/preminger/buildkit/solver/pb"
 )
 
 type Vertex struct {

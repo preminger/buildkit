@@ -13,21 +13,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	gatewayapi "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/secrets/secretsprovider"
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/entitlements"
-	utilsystem "github.com/moby/buildkit/util/system"
-	"github.com/moby/buildkit/util/testutil/echoserver"
-	"github.com/moby/buildkit/util/testutil/integration"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client/llb"
+	"github.com/preminger/buildkit/frontend/gateway/client"
+	gatewayapi "github.com/preminger/buildkit/frontend/gateway/pb"
+	"github.com/preminger/buildkit/identity"
+	"github.com/preminger/buildkit/session"
+	"github.com/preminger/buildkit/session/secrets/secretsprovider"
+	"github.com/preminger/buildkit/session/sshforward/sshprovider"
+	"github.com/preminger/buildkit/solver/errdefs"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/entitlements"
+	utilsystem "github.com/preminger/buildkit/util/system"
+	"github.com/preminger/buildkit/util/testutil/echoserver"
+	"github.com/preminger/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/ssh/agent"
 )
@@ -1875,7 +1875,7 @@ func testClientGatewayContainerHostNetworking(t *testing.T, sb integration.Sandb
 
 	if sb.Rootless() && sb.Value("netmode") == defaultNetwork {
 		// skip "default" network test for rootless, it always runs with "host" network
-		// https://github.com/moby/buildkit/blob/v0.9.0/docs/rootless.md#known-limitations
+		// https://github.com/preminger/buildkit/blob/v0.9.0/docs/rootless.md#known-limitations
 		t.SkipNow()
 	}
 

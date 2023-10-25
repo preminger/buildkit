@@ -3,10 +3,10 @@ package llb
 import (
 	"context"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/flightcontrol"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/pb"
+	"github.com/preminger/buildkit/util/flightcontrol"
 )
 
 type asyncState struct {

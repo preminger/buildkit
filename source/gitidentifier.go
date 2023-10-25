@@ -5,8 +5,8 @@ import (
 	"path"
 	"strings"
 
-	srctypes "github.com/moby/buildkit/source/types"
-	"github.com/moby/buildkit/util/sshutil"
+	srctypes "github.com/preminger/buildkit/source/types"
+	"github.com/preminger/buildkit/util/sshutil"
 )
 
 type GitIdentifier struct {

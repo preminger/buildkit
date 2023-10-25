@@ -5,11 +5,11 @@ import (
 	"syscall"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/llbsolver/ops/fileoptypes"
-	"github.com/moby/buildkit/solver/pb"
 	"github.com/opencontainers/runc/libcontainer/user"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/snapshot"
+	"github.com/preminger/buildkit/solver/llbsolver/ops/fileoptypes"
+	"github.com/preminger/buildkit/solver/pb"
 	copy "github.com/tonistiigi/fsutil/copy"
 )
 

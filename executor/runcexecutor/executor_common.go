@@ -7,9 +7,9 @@ import (
 	"context"
 
 	runc "github.com/containerd/go-runc"
-	"github.com/moby/buildkit/executor"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/executor"
 	"golang.org/x/sync/errgroup"
 )
 

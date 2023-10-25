@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/moby/buildkit/session"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/session"
 	"github.com/tonistiigi/fsutil"
 	fstypes "github.com/tonistiigi/fsutil/types"
 	"google.golang.org/grpc"

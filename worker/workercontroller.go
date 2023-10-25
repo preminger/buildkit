@@ -3,8 +3,8 @@ package worker
 import (
 	"github.com/containerd/containerd/filters"
 	"github.com/hashicorp/go-multierror"
-	"github.com/moby/buildkit/client"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/client"
 )
 
 // Controller holds worker instances.

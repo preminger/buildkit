@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/solver/internal/pipe"
-	"github.com/moby/buildkit/util/bklog"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
+	"github.com/preminger/buildkit/solver/internal/pipe"
+	"github.com/preminger/buildkit/util/bklog"
 )
 
 type edgeStatusType int
